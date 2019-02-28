@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btn1 = findViewById(R.id.button1);
+        btn2 = findViewById(R.id.button2);
 
     }
 
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.button2:
                 Intent implicit_intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.arsenal.com"));
                 startActivity(implicit_intent);
+                break;
 
         }
     }
